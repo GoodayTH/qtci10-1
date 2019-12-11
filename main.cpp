@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
 
 #ifdef Q_OS_LINUX
     qInfo() << "Linux code here";
-#elif defined(W_OS_WIN32)
+#elif defined(Q_OS_WIN32)
     qInfo() << "Windows code here";
-#elif defined(W_OS_MACX)
+#elif defined(Q_OS_MACX)
     qInfo() << "Mac code here";
 #else
     qInfo() << "Unknown OS code here";
@@ -33,3 +33,4 @@ int main(int argc, char *argv[])
 
     return a.exec();
 }
+
